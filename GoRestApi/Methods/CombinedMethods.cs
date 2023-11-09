@@ -74,7 +74,7 @@ namespace GoRest.GoRestApi.Methods
             List<User> allUsers = JsonConvert.DeserializeObject<List<User>>(contentGet);
             var orderedList = allUsers.OrderBy(user => random.Next());
             User singleUser = orderedList.First();
-            //User singleUser = allUsers?.FirstOrDefault(x => x.id == 5676928);
+           
             return (singleUser, responseGet);
         }
 
