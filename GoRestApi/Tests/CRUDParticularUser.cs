@@ -15,8 +15,7 @@ namespace GoRest.GoRestApi.Tests
     public class BasicTestCases
     {
         public static HttpClient httpClient = new HttpClient();
-        //public static string URI = "https://gorest.co.in/public/v2/users/";
-        //public static string _token = "Bearer 3c7607055a1bf7d429b0b9ed454c9f98c7687002e4a0e4ff91251cc6555ec5ea";
+        
 
         [Fact]
         public async Task VerifyCRUDUser()
