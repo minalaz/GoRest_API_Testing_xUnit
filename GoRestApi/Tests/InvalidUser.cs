@@ -21,8 +21,7 @@ namespace GoRest.GoRestApi.Tests
             User invalidUser = GenerateUser.InvalidUser();
             var response = await ResponseMethods.PostUserResponse(invalidUser);
             //assert that response has 422 status code which stands for Unprocessable entity
-            Assert.Equal(HttpStatusCode.UnprocessableEntity, response.StatusCode);
-            //deserialize user for viewing messages in response body
+            Assert.Equal(HttpStatusCode.UnprocessableEntity, response.StatusCode)
             string content = await response.Content.ReadAsStringAsync();
             
             //assert error messages
