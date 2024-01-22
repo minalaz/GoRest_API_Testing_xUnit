@@ -22,9 +22,9 @@ These instructions will get you a copy of the project up and running on your loc
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/minalaz/GoRestApiTesting.git
-2. **Navigate to the project directory**
+2. **Navigate to the project directory**(instead of just project name, it is necessary to enter the path to the project in your terminal)
    ```bash
-   cd GoRestApiTesting
+   cd  GoRestApiTesting
 3. **Restore NuGet Packages**(if using Visual Studio, this might be automatic)
    ```bash
    dotnet restore
